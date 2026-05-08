@@ -44,8 +44,8 @@ through Shuffle's sub-workflow mechanism.
 It receives raw Wazuh alert JSON, calls Parse and Normalize to extract IOCs,
 dispatches enrichment to both Cortex and OpenCTI in parallel, merges results
 from both branches into a unified structure, then passes everything to the
-Create IRIS Ticket sub-workflow. Four merge actions (Merge_Alert_Data,
-Merge_Observables, Merge_Enrichments, Merge_Alert_ID) consolidate parallel
+Create IRIS Ticket sub-workflow. Three merge actions (Merge_Alert_Data,
+Merge_Observables, Merge_Enrichments) consolidate parallel
 branch data before forwarding downstream.
 
 ![SIEM to Ticket workflow](screenshots/siem-to-ticket.png)

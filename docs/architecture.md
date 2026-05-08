@@ -89,12 +89,11 @@ for complete coverage.
 ### Phase 4 — Merge
 
 The orchestrator receives results from both enrichment branches and
-consolidates them through four merge actions:
+consolidates them through three merge actions:
 
 - Merge_Alert_Data — original Wazuh alert metadata
 - Merge_Observables — parsed and typed IOC list
 - Merge_Enrichments — combined Cortex and OpenCTI reports
-- Merge_Alert_ID — tracking identifiers for correlation
 
 The result is a single unified JSON object carrying the full alert context.
 
